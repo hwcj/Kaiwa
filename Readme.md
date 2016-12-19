@@ -1,4 +1,4 @@
-Kaiwa [![Build Status](https://travis-ci.org/ForNeVeR/kaiwa.svg?branch=develop)](https://travis-ci.org/ForNeVeR/kaiwa)
+Kaiwa
 =====
 Kaiwa is an open source web client for XMPP.  
 
