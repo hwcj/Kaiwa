@@ -7,4 +7,4 @@ li
       .name #{message.sender.getName(message.from.full)}
       .nickname #{message.sender.getNickname(message.from.full)}
       .date(title=messageDate.format('{Dow}, {MM}/{dd}/{yyyy} - {h}:{mm} {Tt}')) #{messageDate.format('{h}:{mm} {tt}')}
-    include mucBareMessage
+    include /includes/mucBareMessage.pug

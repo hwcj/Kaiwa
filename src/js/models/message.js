@@ -2,7 +2,7 @@
 "use strict";
 
 var _ = require('underscore');
-var uuid = require('node-uuid');
+var uuid = require('uuid');
 var HumanModel = require('human-model');
 var templates = require('../templates');
 var htmlify = require('../helpers/htmlify');

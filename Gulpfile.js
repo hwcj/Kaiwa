@@ -5,12 +5,12 @@ var concat = require('gulp-concat');
 var concatCss = require('gulp-concat-css');
 var fs = require('fs');
 var gulp = require('gulp');
-var jade = require('gulp-jade');
+var jade = require('gulp-pug');
 var merge = require('merge-stream');
 var mkdirp = require('mkdirp');
 var source = require('vinyl-source-stream');
 var stylus = require('gulp-stylus');
-var templatizer = require('templatizer');
+var templatizer = require('puglatizer');
 var watch = require('gulp-watch');
 var gitrev = require('git-rev');
 var webpack = require("webpack-stream");
@@ -97,14 +97,20 @@ gulp.task('manifest', function (cb) {
 });
 
 gulp.task('jade-templates', function (cb) {
-    templatizer('./src/jade/templates', './src/js/templates.js', cb);
+    templatizer('./src/jade/templates', './src/js/templates.js',
+        {
+            pug: {
+                basedir: __dirname + '/src/jade/templates'
+            }
+        },
+        cb);
 });
 
 gulp.task('jade-views', ['css'], function () {
     var config = getConfig();
     return gulp.src([
         './src/jade/views/*',
-        '!./src/jave/views/layout.jade'
+        '!./src/jave/views/layout.pug'
     ])
         .pipe(jade({
             locals: {

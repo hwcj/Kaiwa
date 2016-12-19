@@ -3,7 +3,7 @@
 
 var _ = require('underscore');
 var async = require('async');
-var uuid = require('node-uuid');
+var uuid = require('uuid');
 var htmlify = require('../helpers/htmlify');
 var HumanModel = require('human-model');
 var Resources = require('./resources');
