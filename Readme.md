@@ -2,12 +2,6 @@ Kaiwa [![Build Status](https://travis-ci.org/ForNeVeR/kaiwa.svg?branch=develop)]
 =====
 Kaiwa is an open source web client for XMPP.  
 
-Our production server is http://chat.jabber.ru
-
-Alpha version is always hosted on http://kaiwa.fornever.me (**warning: there may
-be highly unstable code there, you're recommended to use test accounts with this
-server**).
-
 Kaiwa is a fork of [Otalk][otalk], a prototype application created by &yet.
 
 ![Screenshot](http://getkaiwa.com/assets/img/header.png)
